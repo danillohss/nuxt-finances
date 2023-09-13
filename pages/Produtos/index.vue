@@ -10,7 +10,9 @@
 
     <div>
       <div class="container mx-auto">
-        <h1 class="text-lg font-bold">A Empresa</h1>
+        <h1 class="text-lg font-bold">Produtos</h1>
+        <NuxtLink to="/Produtos/Produto-a"></NuxtLink>
+        <NuxtLink to="/Produtos/Produto-b"></NuxtLink>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
           magni molestias praesentium rem tenetur! Aliquid aperiam at dicta
@@ -20,9 +22,10 @@
     </div>
   </div>
 </template>
-
-<script>
+  
+  <script>
 export default {
   name: "A-EMPRESA",
 };
 </script>
+  
