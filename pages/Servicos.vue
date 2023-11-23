@@ -13,12 +13,23 @@
         <NuxtChild />
       </div>
     </div>
+    <pre>{{ services }}</pre>
   </div>
 </template>
   
   <script>
 export default {
   name: "Servicos",
+  data() {
+    return {
+      services: [],
+    };
+  },
+  async fetch() {
+    this.services = await this.$axios.$get(
+      "https://jsonplaceholder.typicode.com/users?_limit=3"
+    );
+  },
 };
 </script>
   
