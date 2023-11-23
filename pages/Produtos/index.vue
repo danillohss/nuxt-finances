@@ -12,12 +12,24 @@
         </p>
       </div>
     </div>
+    <p v-for="product in products" :key="product.id">
+      {{ product.title }}
+    </p>
   </div>
 </template>
   
   <script>
 export default {
   name: "A-EMPRESA",
+
+  async asyncData({ $axios }) {
+    const products = await $axios.$get(
+      "https://jsonplaceholder.typicode.com/posts?_limit=3"
+    );
+    return {
+      products,
+    };
+  },
 };
 </script>
   
