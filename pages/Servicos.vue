@@ -20,6 +20,12 @@
   <script>
 export default {
   name: "Servicos",
+  head() {
+    return {
+      title: "Servicos",
+      meta: [{ hid: "services", name: "service", content: "Meu serviço" }],
+    };
+  },
   data() {
     return {
       services: [],
