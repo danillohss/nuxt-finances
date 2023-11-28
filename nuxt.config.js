@@ -15,11 +15,12 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
   //variaveis de ambiente publicas
   publicRuntimeConfig: {
     youtube_api_key: process.env.youtube_api_key,
   },
+
+  target: 'static',
 
   //variaveis de ambiente privadas
   privateRuntimeConfig: {
