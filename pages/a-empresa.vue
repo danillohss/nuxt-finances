@@ -6,6 +6,7 @@
       molestias praesentium rem tenetur! Aliquid aperiam at dicta error est eum
       iste magni minus nihil non quisquam sit, unde voluptate.
     </p>
+    {{ $config }}
   </div>
 </template>
 

@@ -16,6 +16,16 @@ export default {
     ]
   },
 
+  //variaveis de ambiente publicas
+  publicRuntimeConfig: {
+    youtube_api_key: process.env.youtube_api_key,
+  },
+
+  //variaveis de ambiente privadas
+  privateRuntimeConfig: {
+    facebook_api_key: process.env.facebook_api_key,
+  },
+
   router: {
     middleware: 'auth',
   },
